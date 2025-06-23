@@ -44,18 +44,33 @@ This project is a collaborative academic exploration into portfolio optimization
   - Monthly Sharpe: **0.275**, Annualized Sharpe: **0.954**, Max Drawdown: **-22.40%**
 
 
+### 🧠 Clustering Concept
+In **Strategy 2**, we used the **KMeans clustering algorithm** to group stocks based on their **return behavior** over a rolling 3-month window. Here's how it works:
+- **Feature Construction**:
+  - For each month, we collected **3 months of historical returns** for each stock.
+  - This return matrix served as the feature space where each stock is a data point.
+- **Clustering Method**:
+  - We applied **KMeans with 5 clusters** to segment stocks into behaviorally similar groups.
+  - Clustering was done in the **cross-sectional space** of stocks, not across time.
+- **Cluster Purpose**:
+  - The goal was to group stocks that behave similarly, making it easier to identify and filter for consistent performance.
+  - CAPM parameters (alpha and beta) were later used to **refine stock selection** within each cluster.
+This unsupervised learning step added structure to the stock universe, helping isolate reliable alpha-generating candidates.
 
-## 📂 Project Notebook
-- Project_2_Clustering_Portfolio.ipynb contains the full research pipeline
-- Data preprocessing
-- Clustering (KMeans, possibly others)
-- Portfolio construction & weight allocation
-- Performance evaluation
 
 ## ⚙️ Tools & Libraries Used
 - Python (pandas, NumPy, matplotlib, sklearn, yfinance)
 - Algorithms: K Means Clustering
 - Portfolio Evaluation: Sharpe Ratio, Maximum Drawdown, CAGR
+
+
+## 💻 How to Run
+
+    # In Jupyter Notebook
+    !pip install yfinance pandas numpy matplotlib seaborn sklearn
+Open the notebook Project_2_Portfolio_Management.ipynb, and run cells sequentially
+
+
 
 ## 🧠 What We Learned
 - Applying unsupervised learning techniques like KMeans can reveal hidden structure in stock behavior.
