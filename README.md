@@ -6,7 +6,7 @@ This project is a collaborative academic exploration into portfolio optimization
 ## 📊 Performance Evaluation
 | Strategy   | Monthly Sharpe | Annualized Sharpe | Max Drawdown | Final Portfolio Value | Total Return (%) |
 |------------|----------------|-------------------|---------------|------------------------|-------------------|
-| Strategy 1 | 0.176          | 0.608             | -35.46%       | $3,833,699             | **+283.37%**      |
+| Strategy 1 | 0.176          | 0.608             | -35.46%       | $3,833,699.34          | **+283.37%**      |
 | Strategy 2 | 0.275          | 0.954             | -22.40%       | $9,150,980.48          | **+815.10%**      |
 
 ## 📘 Strategy Breakdown
